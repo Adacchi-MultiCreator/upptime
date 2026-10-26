@@ -4,19 +4,19 @@
     "url": "https://license-manager.adacchi-creative.com/api/v1/public-status",
     "icon": "https://icons.duckduckgo.com/ip3/license-manager.adacchi-creative.com.ico",
     "slug": "license-server",
-    "status": "down",
-    "uptime": "58.07%",
-    "uptimeDay": "58.07%",
-    "uptimeWeek": "58.07%",
-    "uptimeMonth": "58.07%",
-    "uptimeYear": "58.07%",
-    "time": 451,
-    "timeDay": 451,
-    "timeWeek": 451,
-    "timeMonth": 451,
-    "timeYear": 451,
+    "status": "up",
+    "uptime": "0.10%",
+    "uptimeDay": "0.10%",
+    "uptimeWeek": "0.10%",
+    "uptimeMonth": "0.10%",
+    "uptimeYear": "0.10%",
+    "time": 542,
+    "timeDay": 542,
+    "timeWeek": 542,
+    "timeMonth": 542,
+    "timeYear": 542,
     "dailyMinutesDown": {
-      "2026-10-26": 0
+      "2026-10-26": 311
     }
   },
   {
