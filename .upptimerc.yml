@@ -1,31 +1,36 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime の設定（Adacchi Creative ライセンスサーバーの監視）
+owner: Adacchi-MultiCreator
+repo: upptime
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  # 状況ページ（status.adacchi-creative.com）は slug "license-server" をライセンスサーバー本体として読む
+  - name: License server
+    slug: license-server
+    url: https://license-manager.adacchi-creative.com/api/v1/public-status
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 10000
+  - name: License manager site
+    slug: license-manager-site
+    url: https://license-manager.adacchi-creative.com/
+    maxResponseTime: 10000
+
+# 障害が起きると、このリポジトリに Issue が作られます（GitHub から通知メールが届きます）
+assignees:
+  - Adacchi-MultiCreator
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /upptime
+  name: Adacchi Creative 稼働履歴
+  introTitle: "**ライセンスサーバーの稼働履歴**"
+  introMessage: 5分ごとに自動で確認した記録です。いまの状況は [サービス稼働状況](https://status.adacchi-creative.com/) をご覧ください。
+  logoUrl: https://status.adacchi-creative.com/favicon.svg
+  favicon: https://status.adacchi-creative.com/favicon.svg
   navbar:
-    - title: Status
-      href: /
+    - title: サービス稼働状況
+      href: https://status.adacchi-creative.com/
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+workflowSchedule:
+  uptime: "*/5 * * * *"
