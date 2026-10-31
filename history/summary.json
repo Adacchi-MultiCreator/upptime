@@ -4,12 +4,12 @@
     "url": "https://license-manager.adacchi-creative.com/api/v1/public-status",
     "icon": "https://icons.duckduckgo.com/ip3/license-manager.adacchi-creative.com.ico",
     "slug": "license-server",
-    "status": "up",
-    "uptime": "81.06%",
-    "uptimeDay": "81.79%",
-    "uptimeWeek": "81.06%",
-    "uptimeMonth": "81.06%",
-    "uptimeYear": "81.06%",
+    "status": "down",
+    "uptime": "84.01%",
+    "uptimeDay": "99.66%",
+    "uptimeWeek": "84.01%",
+    "uptimeMonth": "84.01%",
+    "uptimeYear": "84.01%",
     "time": 761,
     "timeDay": 854,
     "timeWeek": 761,
@@ -18,7 +18,8 @@
     "dailyMinutesDown": {
       "2026-10-26": 311,
       "2026-10-27": 656,
-      "2026-10-30": 262
+      "2026-10-30": 262,
+      "2026-10-31": 5
     }
   },
   {
@@ -26,20 +27,21 @@
     "url": "https://license-manager.adacchi-creative.com/",
     "icon": "https://icons.duckduckgo.com/ip3/license-manager.adacchi-creative.com.ico",
     "slug": "license-manager-site",
-    "status": "up",
-    "uptime": "86.00%",
-    "uptimeDay": "82.12%",
-    "uptimeWeek": "86.00%",
-    "uptimeMonth": "86.00%",
-    "uptimeYear": "86.00%",
+    "status": "down",
+    "uptime": "88.23%",
+    "uptimeDay": "99.99%",
+    "uptimeWeek": "88.23%",
+    "uptimeMonth": "88.23%",
+    "uptimeYear": "88.23%",
     "time": 1033,
-    "timeDay": 964,
+    "timeDay": 968,
     "timeWeek": 1033,
     "timeMonth": 1033,
     "timeYear": 1033,
     "dailyMinutesDown": {
       "2026-10-27": 651,
-      "2026-10-30": 257
+      "2026-10-30": 257,
+      "2026-10-31": 0
     }
   }
 ]
